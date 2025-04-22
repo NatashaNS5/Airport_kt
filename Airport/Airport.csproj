@@ -6,16 +6,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>image-Photoroom (12).ico</ApplicationIcon>
+    <ApplicationIcon>Images\image-Photoroom (12).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="image-Photoroom %2812%29.png" />
-    <None Remove="kisspng-airplane-bordeaux-tramway-line-c-train-computer-ic-transportation-5abdfa48b8f5c1.2911071015223998167576.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="image-Photoroom (12).ico" />
+    <Content Include="Images\image-Photoroom (12).ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,8 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="image-Photoroom (12).png" />
-    <Resource Include="kisspng-airplane-bordeaux-tramway-line-c-train-computer-ic-transportation-5abdfa48b8f5c1.2911071015223998167576.jpg" />
+    <Resource Include="Images\image-Photoroom %2812%29.png" />
   </ItemGroup>
 
 </Project>
