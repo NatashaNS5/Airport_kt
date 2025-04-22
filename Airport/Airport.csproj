@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>image-Photoroom (12).ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image-Photoroom %2812%29.png" />
+    <None Remove="kisspng-airplane-bordeaux-tramway-line-c-train-computer-ic-transportation-5abdfa48b8f5c1.2911071015223998167576.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="image-Photoroom (12).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image-Photoroom (12).png" />
+    <Resource Include="kisspng-airplane-bordeaux-tramway-line-c-train-computer-ic-transportation-5abdfa48b8f5c1.2911071015223998167576.jpg" />
+  </ItemGroup>
+
+</Project>

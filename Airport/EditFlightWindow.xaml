@@ -1,0 +1,31 @@
+﻿<Window x:Class="Airport.EditFlightWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airport.Utils"
+        mc:Ignorable="d"
+        Title="Редактировать рейс" Height="400" Width="400">
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Направление"/>
+        <ComboBox Name="DirectionBox" ItemsSource="{x:Static local:Directions.All}" Margin="0,5"/>
+
+        <TextBlock Text="Номер рейса"/>
+        <TextBox Name="FlightNumberBox" Margin="0,5"/>
+
+        <TextBlock Text="Самолёт"/>
+        <TextBox Name="PlaneModelBox" Margin="0,5"/>
+
+        <TextBlock Text="Авиакомпания"/>
+        <TextBox Name="AirlineBox" Margin="0,5"/>
+
+        <TextBlock Text="Время прибытия"/>
+        <DatePicker Name="ArrivalPicker" Margin="0,5"/>
+
+        <TextBlock Text="Время отправления"/>
+        <DatePicker Name="DeparturePicker" Margin="0,5"/>
+
+        <Button Content="Сохранить" Click="Save_Click" Margin="0,10"/>
+    </StackPanel>
+</Window>
