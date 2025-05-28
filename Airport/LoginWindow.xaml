@@ -7,7 +7,7 @@
         mc:Ignorable="d"
          Title="Вход" Height="400" Width="600" MinWidth="600" MinHeight="400">
     <StackPanel Margin="20">
-        <Image Height="62" Width="104" Source="C:\Users\USER\Desktop\Airport\Airport\Images\image-Photoroom (12).png"/>
+        <Image Height="62" Width="104" Source="\Images\logo.png"/>
         <StackPanel Margin="0,5">
             <TextBlock Text="Логин" FontSize="16" FontFamily="Times New Roman"/>
             <TextBox x:Name="LoginBox" FontFamily="Times New Roman"/>

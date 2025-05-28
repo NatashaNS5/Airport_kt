@@ -1,5 +1,6 @@
 ﻿using Airport.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,9 @@ namespace Airport.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Flight> Flights { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            options.UseSqlite(@"Data Source=C:\Users\USER\Desktop\Airport\Airport\airport.db");
+            optionsBuilder.UseSqlite($"Data Source=airport.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
